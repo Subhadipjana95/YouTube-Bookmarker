@@ -1,0 +1,13 @@
+VideoMark/
+├── manifest.json
+├── popup/
+│   ├── popup.html
+│   ├── popup.css
+│   └── popup.js
+├── contentScript.js
+├── background.js
+└── assets/
+    └── icons/
+        ├── icon16.png
+        ├── icon32.png
+        ├── icon48.png
