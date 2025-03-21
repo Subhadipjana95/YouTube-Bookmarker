@@ -1,53 +1,114 @@
-.container {
-  width: 280px;
-  color: #314d3e;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anek Latin", sans-serif;
 }
 
-.title {
+body {
+  background-color: transparent;
+  color: #ffffff;
+  /* border-radius: 20px; */
+  overflow: hidden;
+  border: none;
+  outline: none;
+}
+
+.container {
+  width: 380px;
+  min-height: 140px;
+  padding: 15px;
+  background-color: #1c1c1e;
+  color: #ffffff;
+  /* border-radius: 15px; */
+  overflow: hidden;
+}
+
+.title{
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0;
+  color: #bb86fc;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.response{
   font-size: 14px;
-  font-weight: bold;
-  padding: 8px;
+  font-weight: 500;
+  padding: 10px 0;
+  color: #bb86fc;
+  margin: 0 10px;
 }
 
 .textbox {
   width: 100%;
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
-  padding: 0px 2px;
+  padding: 8px 10px;
+  background-color: #2c2c2e;
+  border: none;
+  border-radius: 12px;
+  color: #ffffff;
 }
 
 .textbox:focus {
   outline: 0;
-  border-color: #66afe9;
+  border-color: #bb86fc;
+  box-shadow: 0 0 0 2px rgba(187, 134, 252, 0.3);
 }
 
 .bookmarks {
-  margin: 5px 5px;
-  padding: 3px;
+  margin: 0px 0 10px 0;
+  padding: 5px;
 }
 
 .bookmark {
   display: flex;
-  border-bottom-color: #00254d;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-radius: 0.8rem;
-  padding: 3px;
-  padding-bottom: 7px;
-  margin-bottom: 7px;
+  background-color: #2c2c2e;
+  border-radius: 16px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.bookmark:hover {
+  background-color: #3c3c3e;
 }
 
 .bookmark-title {
-  padding-left: 2px;
+  padding-left: 5px;
+  font-size: 14px;
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #a9a9a9;
+}
+
+.bookmark-controls {
+  display: flex;
+  gap: 10px;
+  text-align: right;
 }
 
 .bookmark-controls img {
   margin: 0 4px;
-  width: 18px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s;
 }
-.bookmark-controls {
-  flex: auto;
-  text-align: right;
+
+.bookmark-controls img:hover {
+  opacity: 1;
+}
+
+.no-bookmarks {
+  text-align: center;
+  color: #a9a9a9;
+  padding: 20px;
+  font-style: italic;
 }

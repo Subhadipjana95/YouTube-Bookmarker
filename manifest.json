@@ -1,7 +1,7 @@
 {
   "name": "Timestamp Bookmaker",
   "version": "0.1.0",
-  "description": "Saving timestamps in YouTube videos",
+  "description": "Saving timestamps as a bookmark in YouTube videos",
   "permissions": ["storage", "tabs"],
   "host_permissions": ["https://*.youtube.com/*"],
   "background": {
@@ -19,7 +19,8 @@
         "assets/bookmark.png",
         "assets/play.png",
         "assets/delete.png",
-        "assets/save.png"
+        "assets/save.png",
+        "assets/link.png"
       ],
       "matches": ["https://*.youtube.com/*"]
     }
@@ -30,7 +31,7 @@
       "24": "assets/ext-icon.png",
       "32": "assets/ext-icon.png"
     },
-    "default_title": "My YT Bookmarks",
+    "default_title": "VideoMark",
     "default_popup": "popup.html"
   },
   "manifest_version": 3
